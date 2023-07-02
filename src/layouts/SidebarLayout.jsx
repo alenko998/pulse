@@ -33,7 +33,7 @@ const navigation = [
   { name: 'Insights', href: 'one', icon: HomeIcon, current: false },
   { name: 'Organization', href: 'two', icon: UsersIcon, current: false },
   { name: 'Account', href: 'account', icon: FolderIcon, current: false },
-  { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
+  { name: 'Branding', href: 'branding', icon: CalendarIcon, current: false },
   { name: 'Documents', href: '#', icon: DocumentDuplicateIcon, current: false },
   { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
   { name: 'Dashboard', href: 'one', icon: HomeIcon, current: false },
@@ -129,7 +129,7 @@ export default function SidebarLayout() {
                             {navigation.map((item) => (
                               <li key={item.name}>
                                 <a
-                                  href={'/dashboard' + item.current}
+                                  href={'/dashboard' + item.href}
                                   className={classNames(
                                     item.current
                                       ? 'bg-indigo-700 text-white'
