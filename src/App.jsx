@@ -11,11 +11,15 @@ import Daj from './routes/One'
 import Mije from './routes/Two'
 import Account from './routes/Account'
 import Branding from './routes/Branding'
+import Signin from './routes/Signin'
+import Recover from './routes/Recover'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
     <Route>
-        <Route path='/' element={<Login/>}/>
+        <Route path='/' element={<Signin/>}/>
+        <Route path='/signin' element={<Signin/>}/>
+        <Route path='/recover' element={<Recover/>}/>
         <Route path='/dashboard' element={<Dashboard/>}>
             <Route path='one' element={<Daj/>}/>
             <Route path='two' element={<Mije/>}/>

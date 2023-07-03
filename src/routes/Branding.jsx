@@ -1,6 +1,8 @@
 import React from 'react'
 import Heading from '../components/Heading'
 import {BiImage} from 'react-icons/bi'
+import Button from '../components/Button'
+import SecondaryButton from '../components/SecondaryButton'
 
 
 const Branding = () => {
@@ -17,7 +19,10 @@ const Branding = () => {
             <p>size up to 5 MB</p>
         </div>
       </div>
-   
+      <div className='flex w-1/5 mx-auto items-center justify-between mt-8'>
+        <SecondaryButton text={"Cancel"}/>
+        <Button text={"Save"}/>
+      </div>
     </div>
   )
 }

@@ -129,7 +129,7 @@ export default function SidebarLayout() {
                             {navigation.map((item) => (
                               <li key={item.name}>
                                 <a
-                                  href={'/dashboard' + item.href}
+                                  href={'/dashboard/' + item.href}
                                   className={classNames(
                                     item.current
                                       ? 'bg-indigo-700 text-white'
