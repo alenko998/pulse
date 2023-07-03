@@ -2,92 +2,82 @@ import React from 'react'
 
 const Signin = () => {
   return (
-        <div className="flex min-h-full flex-1 pt-32 pr-5 ">
-            <div className="flex flex-1 flex-col justify-center px-4 py-12 sm:px-6 lg:flex-none lg:px-20 xl:px-20 xl:pl-24">
-                <div className="mx-auto w-full max-w-sm lg:w-96">
-                <div className='flex flex-col items-center'>
-                <img
-                className="h-10 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                alt="Your Company"
-              />
-              <h2 className="mt-8 text-2xl font-bold leading-9 tracking-tight text-gray-900">
-                Sign in to your account
-              </h2>
-            </div>
-
-            <div className="mt-10">
-              <div>
-                <form action="#" method="POST" className="space-y-6">
-                  <div>
+    <div className='w-full h-screen  p-10 pt-32 pb-32'>
+        <div className='w-6/7 h-full flex'>
+            <div className='flex flex-col  justify-between items-center w-2/5 h-full pt-4'>
+                <div className=' w-3/4'>
+                  <img
+                  className="mx-auto h-10 w-auto"
+                  src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                  alt="Your Company"
+                  />
+                  <h2 className="mt-10 text-center text-2xl font-bold leading-9 tracking-tight text-gray-900">
+                  Sign in to your account
+                  </h2>
+                </div>
+                <form className="space-y-6 flex flex-col items-center justify-center w-3/4" action="#" method="POST">
+                    <div className='w-2/3'>
                     <label htmlFor="email" className="block text-sm font-medium leading-6 text-gray-900">
-                      Email address
+                        Email address
                     </label>
                     <div className="mt-2">
-                      <input
-                        id="email"
-                        name="email"
-                        type="email"
-                        autoComplete="email"
-                        required
-                        className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
-                      Password
-                    </label>
-                    <div className="mt-2">
-                      <input
-                        id="password"
-                        name="password"
-                        type="password"
-                        autoComplete="current-password"
-                        required
-                        className="block w-full rounded-md border-0 py-1.5 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-                      />
-                    </div>
-                  </div>
-
-         
-
-                  <div>
-                    <button
-                      type="submit"
-                      className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                    >
-                      Sign in
-                    </button>
-                  </div>
-                  
-                    <div className="ml-32 text-sm leading-6">
-                      <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                        Forgot password?
-                      </a>
-                  </div>
-                </form>
-              </div>
-              <div className='flex justify-center mt-12'>
-              <p className="mt-2 text-sm leading-6 text-gray-500">
-                    Don't have an account yet?{' '}
-                <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                    Sign up
-                </a>
-                </p>
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  autoComplete="email"
+                  required
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
               </div>
             </div>
-          </div>
+
+            <div className='w-2/3'>
+              <div className="flex items-center justify-between">
+                <label htmlFor="password" className="block text-sm font-medium leading-6 text-gray-900">
+                  Password
+                </label>
+            
+              </div>
+              <div className="mt-2">
+                <input
+                  id="password"
+                  name="password"
+                  type="password"
+                  autoComplete="current-password"
+                  required
+                  className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                />
+              </div>
+            </div>
+
+            <div className='w-2/3'>
+              <button
+                type="submit"
+                className="flex w-full justify-center rounded-md bg-indigo-600 px-3 py-1.5 text-sm font-semibold leading-6 text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                <a href="/dashboard/one">Sign in</a>
+                
+              </button>
+            </div>
+            <div className="text-sm ">
+                  <a href="/recover" className="font-semibold text-indigo-600 hover:text-indigo-500">
+                    Forgot password?
+                  </a>
+                </div>
+          </form>
+          <p className="mt-10 text-center text-sm text-gray-500 w-3/4">
+             Don't have an account yet?{' '}
+            <a href="/signup" className="font-semibold leading-6 text-indigo-600 hover:text-indigo-500">
+              Sign up
+            </a>
+          </p>
+            </div>
+            <div className='w-3/5 h-full pt-4'>
+                <div className='border border-gray-500  h-[645px] hidden lg:block'/>
+            </div>
         </div>
-        <div className="relative hidden w-0 flex-1 lg:block border border-gray-500">
-          {/* <img
-            className="absolute inset-0 h-full w-full object-cover"
-            src="https://images.unsplash.com/photo-1496917756835-20cb06e75b4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1908&q=80"
-            alt=""
-          /> */}
-        </div>
-      </div>
+    </div>
   )
 }
 
