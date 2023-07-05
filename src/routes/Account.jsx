@@ -1,14 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Heading from '../components/Heading'
 import ImagePlaceholder from '../components/ImagePlaceholder'
 import Button from '../components/Button'
 import SecondaryButton from '../components/SecondaryButton'
 import AccountForm from '../forms/AccountForm'
+import AccountModal from '../modals/AccountModal'
+
 
 const Account = () => {
   const title = "Account";
   const firstButton = "Upload logo";
   const secondButton = "Remove logo";
+  const [open, setOpen] = useState(true)
   return (
     <div>
       {/* heading */}
@@ -35,8 +38,10 @@ const Account = () => {
 
         <div className='h-[1px] bg-black mt-4'></div>
         <h1 className='text-2xl font-light'>Delete account</h1>
-        <p>If you want to remove your organization and all its data, you <span className='text-blue-500 underline hover:cursor-pointer'>can delete your account</span>. Note that this action cannot be undone, and it will permanently delete all data from your account and your access
+        <p>If you want to remove your organization and all its data, you <span onClick={()=>{setOpen(true)}} className='text-blue-500 underline hover:cursor-pointer'>can delete your account</span>. Note that this action cannot be undone, and it will permanently delete all data from your account and your access
         will be blocked immediately.</p>
+
+        <AccountModal open={open} setOpen={setOpen}/>
 
 
 
