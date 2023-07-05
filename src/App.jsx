@@ -8,13 +8,13 @@ import {
 import Dashboard from './routes/Dashboard'
 import Login from './routes/Login'
 import Daj from './routes/One'
-import Mije from './routes/Two'
 import Account from './routes/Account'
 import Branding from './routes/Branding'
 import Signin from './routes/Signin'
 import Recover from './routes/Recover'
 import Signup from './routes/Signup'
 import SidebarLayout from './layouts/SidebarLayout'
+import Organization from './routes/Organization'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -25,7 +25,7 @@ const router = createBrowserRouter(
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/dashboard' element={<SidebarLayout/>}>
             <Route path='one' element={<Daj/>}/>
-            <Route path='two' element={<Mije/>}/>
+            <Route path='organization' element={<Organization/>}/>
             <Route path='account' element={<Account/>}/>
             <Route path='branding' element={<Branding/>}/>
         </Route>

@@ -31,7 +31,7 @@ import { Outlet } from 'react-router'
 
 const navigation = [
   { name: 'Insights', href: 'one', icon: HomeIcon, current: false },
-  { name: 'Organization', href: 'two', icon: UsersIcon, current: false },
+  { name: 'Organization', href: 'organization', icon: UsersIcon, current: false },
   { name: 'Account', href: 'account', icon: FolderIcon, current: false },
   { name: 'Branding', href: 'branding', icon: CalendarIcon, current: false },
   { name: 'Documents', href: '#', icon: DocumentDuplicateIcon, current: false },
