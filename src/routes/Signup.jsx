@@ -116,7 +116,7 @@ const Signup = () => {
               <div className=''>
               <label htmlFor="remember-me" className="flex flex-col ml-3 text-sm leading-6 text-gray-900 items-center">
                 <p className=''>I have read and agree to the</p>
-                <p className='font-bold'>Terms of Services</p>
+                <a href="/terms"><p className='font-bold'>Terms of Services</p></a>
               </label>
               </div>
             </div>

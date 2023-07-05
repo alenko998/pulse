@@ -36,17 +36,15 @@ const AccountModal = ({open,setOpen}) => {
                 leaveFrom="opacity-100 translate-y-0 sm:scale-100"
                 leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
               >
-                <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white  text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
+                <Dialog.Panel className="relative transform overflow-hidden rounded-xl bg-white   text-left shadow-xl border border-gray-700 transition-all sm:my-8 sm:w-full sm:max-w-2xl">
                   <div className='w-full h-full'>
                     <p className="text-sm font-bold text-gray-500 px-4 pb-4 pt-5 sm:p-6">
                         Are you sure you want to remove your organization account?
                     </p>
-                    <div className='bg-red-100'>
-                        <p className='text-xs text-red-600 mx-20'>You will permanently delete all data from your account and your access will be blocked immediately.</p>
+                    <div className='flex flex-col bg-red-100 py-4'>
+                        <p className='text-md text-red-600 mx-20 self-center'>You will permanently delete all data from your account</p>
+                        <p className='text-md text-red-600 mx-20 self-center'> and your access will be blocked immediately.</p>
                     </div>
-                    <p className="text-sm font-bold text-gray-500 px-4 pb-4 pt-5 sm:p-6">
-                        Please type in the name of the organization to confrm:
-                    </p>
                     {/* input field */}
                     <div className='w-full px-4 pb-4 pt-5 sm:p-6'>
                       <label htmlFor="organization-name" className="block text-sm font-medium leading-6 text-gray-900 pb-1">Please type in the name of the organization to confrm:</label>
@@ -59,7 +57,7 @@ const AccountModal = ({open,setOpen}) => {
                       />
                     </div>
                   </div>
-                  <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse px-4 pb-4 pt-5 sm:p-6">
+                  <div className="mt-5 sm:mt-0 sm:flex sm:flex-row-reverse px-4 pb-4 pt-5 sm:p-6">
                   <button
                     type="button"
                     className="inline-flex w-full justify-center items-center rounded-md bg-indigo-600 px-3 py-2 text-xs font-semibold text-white shadow-sm hover:bg-indigo-500 sm:ml-3 sm:w-auto"

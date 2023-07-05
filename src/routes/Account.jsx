@@ -11,11 +11,11 @@ const Account = () => {
   const title = "Account";
   const firstButton = "Upload logo";
   const secondButton = "Remove logo";
-  const [open, setOpen] = useState(true)
+  const [open, setOpen] = useState(false)
   return (
     <div>
       {/* heading */}
-        <Heading title={title}/>
+        <Heading title={title}/> 
       {/* image and buttons */}
         <div className='flex flex-col  w-[300px] mx-auto mt-5'>
           <ImagePlaceholder/>

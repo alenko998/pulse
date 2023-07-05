@@ -15,6 +15,7 @@ import Recover from './routes/Recover'
 import Signup from './routes/Signup'
 import SidebarLayout from './layouts/SidebarLayout'
 import Organization from './routes/Organization'
+import Terms from './routes/Terms'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -23,6 +24,7 @@ const router = createBrowserRouter(
         <Route path='/signin' element={<Signin/>}/>
         <Route path='/recover' element={<Recover/>}/>
         <Route path='/signup' element={<Signup/>}/>
+        <Route path='/terms' element={<Terms/>}/>
         <Route path='/dashboard' element={<SidebarLayout/>}>
             <Route path='one' element={<Daj/>}/>
             <Route path='organization' element={<Organization/>}/>
