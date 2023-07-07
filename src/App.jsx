@@ -18,6 +18,7 @@ import Organization from './routes/Organization'
 import Terms from './routes/Terms'
 import Survey from './routes/Survey'
 import Submit from './routes/Submit'
+import Employees from './routes/Employees'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -34,6 +35,7 @@ const router = createBrowserRouter(
             <Route path='organization' element={<Organization/>}/>
             <Route path='account' element={<Account/>}/>
             <Route path='branding' element={<Branding/>}/>
+            <Route path='employees' element={<Employees/>}/>
         </Route>
     </Route>
     )
