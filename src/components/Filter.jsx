@@ -173,7 +173,7 @@ export default function Filter({setOpen}) {
 
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
               {/* Filters */}
-              <form className="hidden lg:block">
+              <form className="hidden lg:block mt-24">
                 <h3 className="sr-only">Categories</h3>
                 {filters.map((section) => (
                   <Disclosure as="div" key={section.id} className="border-b border-gray-200 py-6">
@@ -230,8 +230,8 @@ export default function Filter({setOpen}) {
                         <Button text="Edit"/>
                     </div>
                         <Dropdown/>
-                    </div>
-                  <div className='mt-20'>
+                  </div>
+                  <div className='mt-[-9px]'>
                     <EmployeeTable/>
                   </div>
                 </div>

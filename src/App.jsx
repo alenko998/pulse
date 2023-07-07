@@ -19,6 +19,7 @@ import Terms from './routes/Terms'
 import Survey from './routes/Survey'
 import Submit from './routes/Submit'
 import Employees from './routes/Employees'
+import Thankyou from './routes/Thankyou'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -30,6 +31,7 @@ const router = createBrowserRouter(
         <Route path='/terms' element={<Terms/>}/>
         <Route path='/survey' element={<Survey/>}/>
         <Route path='/submit' element={<Submit/>}/>
+        <Route path='/thankyou' element={<Thankyou/>}/>
         <Route path='/dashboard' element={<SidebarLayout/>}>
             <Route path='one' element={<Daj/>}/>
             <Route path='organization' element={<Organization/>}/>
