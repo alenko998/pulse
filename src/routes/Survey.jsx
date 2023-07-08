@@ -2,6 +2,7 @@ import React from 'react'
 import Dropdown from '../components/Dropdown'
 import {AiOutlineMessage,AiOutlineClockCircle,AiTwotoneLock} from 'react-icons/ai'
 import Button from '../components/Button'
+import AddValue from '../Slideovers/AddValue'
 
 const Survey = () => {
   return (

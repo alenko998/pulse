@@ -36,7 +36,7 @@ const navigation = [
   { name: 'Branding', href: 'branding', icon: CalendarIcon, current: false },
   { name: 'Employees', href: 'employees', icon: DocumentDuplicateIcon, current: false },
   { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
-  { name: 'Dashboard', href: 'one', icon: HomeIcon, current: false },
+  { name: 'Values', href: 'values', icon: HomeIcon, current: false },
   { name: 'Team', href: 'two', icon: UsersIcon, current: false },
   { name: 'Projects', href: '#', icon: FolderIcon, current: false },
   { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
@@ -44,8 +44,8 @@ const navigation = [
   { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
   { name: 'Projects', href: '#', icon: FolderIcon, current: false },
   { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-  { name: 'Documents', href: '#', icon: DocumentDuplicateIcon, current: false },
-  { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
+  { name: 'Documents', href: 'account', icon: DocumentDuplicateIcon, current: false },
+  { name: 'Integrations', href: 'Integrations', icon: ChartPieIcon, current: false },
   
 ]
 

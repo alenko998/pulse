@@ -20,6 +20,8 @@ import Survey from './routes/Survey'
 import Submit from './routes/Submit'
 import Employees from './routes/Employees'
 import Thankyou from './routes/Thankyou'
+import Integrations from './routes/Integrations'
+import Values from './routes/Values'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -38,6 +40,8 @@ const router = createBrowserRouter(
             <Route path='account' element={<Account/>}/>
             <Route path='branding' element={<Branding/>}/>
             <Route path='employees' element={<Employees/>}/>
+            <Route path='integrations' element={<Integrations/>}/>
+            <Route path='values' element={<Values/>}/>
         </Route>
     </Route>
     )
