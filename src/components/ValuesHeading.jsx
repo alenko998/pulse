@@ -5,7 +5,7 @@ const ValuesHeading = ({title,setOpen}) => {
   return (
     <div>
         <div className='flex justify-between items-center'>
-            <h1 className='font-light text-2xl'>{title}</h1>
+            <h1 className='font-light text-2xl mb-2'>{title}</h1>
             <div className='ml-6' onClick={()=>{setOpen(true)}}>
                 <Button text="Add value"/>
             </div>
