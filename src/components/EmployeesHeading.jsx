@@ -5,8 +5,8 @@ const EmployeesHeading = ({title}) => {
   return (
     <div>
         <div className='flex justify-between items-center'>
-            <h1 className='font-light text-2xl'>{title}</h1>
-            <div className='flex'>
+            <h1 className='font-light text-2xl mb-2'>{title}</h1>
+            <div className='flex mb-1'>
                 <Button text="Export"/>
                 <div className='ml-3'>
                     <Button text="Import"/>
@@ -15,7 +15,7 @@ const EmployeesHeading = ({title}) => {
                     <Button text="Add employee"/>
                 </div>
             </div>
-        </div>
+        </div> 
         <div className='h-[1px] bg-black mt-6'></div>
     </div>
   )

@@ -20,7 +20,10 @@ const Branding = () => {
         </div>
       <div className='flex flex-col sm:flex-row  justify-around  mt-8 w-full'>
         <SecondaryButton text={"Cancel"}/>
-        <Button text={"Save"}/>
+        <div className='bg-red-100 mt-3 sm:mt-0'>
+          <Button text={"Save"}/>
+        </div>
+       
       </div>
       </div>
 
