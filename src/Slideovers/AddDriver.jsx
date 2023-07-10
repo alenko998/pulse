@@ -3,10 +3,9 @@ import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import AddValueForm from '../forms/AddValueForm'
 import SecondaryButton from '../components/SecondaryButton'
-import EditValueForm from '../forms/EditValueForm'
-import Button from '../components/Button'
+import AddDriverForm from '../forms/AddDriverForm'
 
-export default function EditValue({open,setOpen}) {
+export default function AddDriver({open,setOpen}) {
 
 
   return (
@@ -41,7 +40,7 @@ export default function EditValue({open,setOpen}) {
                     <div className="px-4 sm:px-6">
                       <div className="flex items-start justify-between">
                         <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
-                            Edit value: Value 1
+                            Add new driver/target
                         </Dialog.Title>
                         <div className="ml-3 flex h-7 items-center">
                           <button
@@ -58,23 +57,21 @@ export default function EditValue({open,setOpen}) {
                     <div className="relative mt-6 flex-1 px-4 sm:px-6 flex flex-col justify-between">
                       <div>
                           <div className=' border border-gray-900 mt-[-10px]'/>
-                          <EditValueForm/>
+                          <AddDriverForm/>
                       </div>
                         <div>
                         <div className='border border-gray-900 mb-4'/>
-                        <div className="flex items-center justify-between gap-x-6 mb-10">
+                        <div className="flex items-center justify-end gap-x-6 mb-10">
                           <div onClick={()=>{setOpen(false)}}>
-                          <SecondaryButton text={"Delete"}/>
-                          </div> 
-                          <div className='flex'>
-                          <div className='mr-4' onClick={()=>{setOpen(false)}}>
                           <SecondaryButton text={"Cancel"}/>
                           </div>
-                          <div className='self-center mt-3 sm:mt-0'>
-                          <Button text={"Update"}/>
-                          </div>
-                        
-                          </div>
+                          <button
+                            onClick={()=>{setOpen(false)}}
+                            type="submit"
+                            className="rounded-md mt-3 sm:mt-0 bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                          >
+                            Save
+                          </button>
                         </div>
                         </div>
                       

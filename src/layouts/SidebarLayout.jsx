@@ -35,7 +35,7 @@ const navigation = [
   { name: 'Account', href: 'account', icon: FolderIcon, current: false },
   { name: 'Branding', href: 'branding', icon: CalendarIcon, current: false },
   { name: 'Employees', href: 'employees', icon: DocumentDuplicateIcon, current: false },
-  { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
+  { name: 'Drivers', href: 'drivers', icon: ChartPieIcon, current: false },
   { name: 'Values', href: 'values', icon: HomeIcon, current: false },
   { name: 'Team', href: 'two', icon: UsersIcon, current: false },
   { name: 'Projects', href: '#', icon: FolderIcon, current: false },

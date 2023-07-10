@@ -22,6 +22,7 @@ import Employees from './routes/Employees'
 import Thankyou from './routes/Thankyou'
 import Integrations from './routes/Integrations'
 import Values from './routes/Values'
+import Drivers from './routes/Drivers'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -40,6 +41,7 @@ const router = createBrowserRouter(
             <Route path='account' element={<Account/>}/>
             <Route path='branding' element={<Branding/>}/>
             <Route path='employees' element={<Employees/>}/>
+            <Route path='drivers' element={<Drivers/>}/>
             <Route path='integrations' element={<Integrations/>}/>
             <Route path='values' element={<Values/>}/>
         </Route>

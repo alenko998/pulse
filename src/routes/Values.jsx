@@ -8,7 +8,7 @@ import EditValue from '../Slideovers/EditValue'
 
 const Values = () => {
   const [open, setOpen] = useState(false);
-  const [openEdit, setOpenEdit] = useState(true)
+  const [openEdit, setOpenEdit] = useState(false)
   return (
     <div>
       <ValuesHeading title={"Values"} setOpen={setOpen}/>
