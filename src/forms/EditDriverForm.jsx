@@ -14,7 +14,7 @@
 */
 import { PhotoIcon, UserCircleIcon } from '@heroicons/react/24/solid'
 
-export default function AddDriverForm() {
+export default function EditDriverForm() {
   return (
     <form>
       <div className="space-y-12">

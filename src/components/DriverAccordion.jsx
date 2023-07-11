@@ -15,7 +15,7 @@ const DriverAccordion = () => {
           type="checkbox"
           className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
         />
-        <div className="bg-white h-12 w-full pl-5 flex items-center border border-gray-500">
+        <div className="bg-white h-12 w-full pl-5 flex items-center border-t border-l border-r border-gray-500">
           <h1 className="text-lg font-semibold underline">Accomplishment </h1>
         </div>
         {/* arrow */}
