@@ -43,7 +43,7 @@ const navigation = [
   { name: 'Documents', href: '#', icon: DocumentDuplicateIcon, current: false },
   { name: 'Reports', href: '#', icon: ChartPieIcon, current: false },
   { name: 'Projects', href: '#', icon: FolderIcon, current: false },
-  { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
+  { name: 'Attributes', href: 'attributes', icon: CalendarIcon, current: false },
   { name: 'Documents', href: 'account', icon: DocumentDuplicateIcon, current: false },
   { name: 'Integrations', href: 'Integrations', icon: ChartPieIcon, current: false },
   

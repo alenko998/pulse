@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import Heading from '../components/Heading'
 import ValuesHeading from '../components/ValuesHeading'
 import ValueAccordion from '../components/ValueAccordion'
 import AddValue from '../Slideovers/AddValue'

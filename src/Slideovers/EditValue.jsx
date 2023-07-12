@@ -40,7 +40,7 @@ export default function EditValue({open,setOpen}) {
                   <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
                     <div className="px-4 sm:px-6">
                       <div className="flex items-start justify-between">
-                        <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
+                        <Dialog.Title className="text-base font-semibold leading-6 text-gray-900 mt-1">
                             Edit value: Value 1
                         </Dialog.Title>
                         <div className="ml-3 flex h-7 items-center">

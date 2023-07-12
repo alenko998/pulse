@@ -5,8 +5,6 @@ import {
     Route, 
     RouterProvider, 
 } from 'react-router-dom'
-import Dashboard from './routes/Dashboard'
-import Login from './routes/Login'
 import Daj from './routes/One'
 import Account from './routes/Account'
 import Branding from './routes/Branding'
@@ -27,6 +25,7 @@ import Segments from './routes/Segments'
 import SurveyQuestions from './routes/SurveyQuestions'
 import Engagament from './routes/Engagament'
 import OpenEnded from './routes/OpenEnded'
+import Attributes from './routes/Attributes'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -52,6 +51,7 @@ const router = createBrowserRouter(
             <Route path='surveyQuestions' element={<SurveyQuestions/>}/>
             <Route path='engagament' element={<Engagament/>}/>
             <Route path='openEnded' element={<OpenEnded/>}/>
+            <Route path='attributes' element={<Attributes/>}/>
         </Route>
     </Route>
     )

@@ -6,8 +6,9 @@ import SecondaryButton from '../components/SecondaryButton'
 import EditValueForm from '../forms/EditValueForm'
 import Button from '../components/Button'
 import EditDriverForm from '../forms/EditDriverForm'
+import EditOpenEndedQuestionForm from '../forms/EditOpenEndedQuestionForm'
 
-export default function EditDriver({open,setOpen}) {
+export default function EditOpenEndedQuestion({open,setOpen}) {
 
 
   return (
@@ -42,7 +43,7 @@ export default function EditDriver({open,setOpen}) {
                     <div className="px-4 sm:px-6">
                       <div className="flex items-start justify-between">
                         <Dialog.Title className="text-base font-semibold leading-6 text-gray-900 mt-1">
-                            Edit driver/target: Accomplishment
+                            Edit open-ended question
                         </Dialog.Title>
                         <div className="ml-3 flex h-7 items-center">
                           <button
@@ -59,7 +60,7 @@ export default function EditDriver({open,setOpen}) {
                     <div className="relative mt-6 flex-1 px-4 sm:px-6 flex flex-col justify-between">
                       <div>
                           <div className=' border border-gray-900 mt-[-10px]'/>
-                          <EditDriverForm/>
+                          <EditOpenEndedQuestionForm/>
                       </div>
                         <div>
                         <div className='border border-gray-900 mb-4'/>
