@@ -18,6 +18,7 @@ const SurveyContainer = () => {
     </div>
     </a>
 
+    <a href="openEnded">
     <div className='w-full h-[150px] border rounded-xl border-gray-400 overflow-scroll mb-6'>
         <div className='w-full h-2/5 flex justify-between items-center'>
             <h1 className='text-lg font-semibold ml-4 mt-3'>Open-Ended Questions</h1>
@@ -28,6 +29,7 @@ const SurveyContainer = () => {
         <div className='border-b border-gray-400 mx-4 mt-2'/>
         <p className='mx-4 mt-2 text-sm text-gray-500'>Lorem ipsum dolor sit lorem100 amet consectetur adipisicing elit. Rem voluptatibus vitae voluptatum? Quam, libero dolorum?</p>
     </div>
+    </a>
 
     </div>
   )

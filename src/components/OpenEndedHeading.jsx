@@ -2,14 +2,14 @@ import React from 'react'
 import {AiOutlineMenu} from 'react-icons/ai'
 import Button from './Button'
 
-const EngagamentHeading = ({title,setOpen}) => {
+const OpenEndedHeading = ({title,setOpen}) => {
   return (
-    <div className=''>
+    <div>
         <div className='flex justify-between items-center'>
         <div>
         <div className='flex items-center'>
-              <AiOutlineMenu size={26}/>
-              <h1 className='font-light text-2xl ml-1'>{title}</h1>
+            <AiOutlineMenu size={26}/>
+            <h1 className='font-light text-2xl ml-1'>{title}</h1>
         </div>
         <p className='ml-1 font-'>Manage questions used in your surveys.</p>
         </div>
@@ -22,4 +22,4 @@ const EngagamentHeading = ({title,setOpen}) => {
   )
 }
 
-export default EngagamentHeading
+export default OpenEndedHeading

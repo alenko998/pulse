@@ -4,7 +4,7 @@ import EngagamentHeading from '../components/EngagamentHeading'
 import AddEngagamentQuestion from '../Slideovers/AddEngagamentQuestion'
 
 const Engagament = () => {
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
   return (
     <div>
         <EngagamentHeading title={"Survey questions > Engagement"} setOpen={setOpen}/>
