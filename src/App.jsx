@@ -25,6 +25,7 @@ import Values from './routes/Values'
 import Drivers from './routes/Drivers'
 import Segments from './routes/Segments'
 import SurveyQuestions from './routes/SurveyQuestions'
+import Engagament from './routes/Engagament'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -48,6 +49,7 @@ const router = createBrowserRouter(
             <Route path='values' element={<Values/>}/>
             <Route path='segments' element={<Segments/>}/>
             <Route path='surveyQuestions' element={<SurveyQuestions/>}/>
+            <Route path='engagament' element={<Engagament/>}/>
         </Route>
     </Route>
     )
