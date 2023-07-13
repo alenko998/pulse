@@ -3,6 +3,9 @@ import { Dialog, Transition } from '@headlessui/react'
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import SecondaryButton from '../components/SecondaryButton'
 import AddDriverForm from '../forms/AddDriverForm'
+import AddValueForm from '../forms/AddValueForm'
+import AddOpenEndedQuestionForm from '../forms/AddOpenEndedQuestionForm'
+import AccountForm from '../forms/AccountForm'
 import {FcMenu} from 'react-icons/fc'
 import {BsCheckLg,BsWindowSplit} from 'react-icons/bs'
 import {CiCalendarDate} from 'react-icons/ci'
@@ -10,12 +13,13 @@ import {AiOutlineUser} from 'react-icons/ai'
 
 export default function AddAttribute({open,setOpen}) {
 
-    const [option, setOption] = useState(false);
+    const [option, setOption] = useState(true);
     const [date, setDate] = useState(false);
     const [employee, setEmployee] = useState(false);
     const [combination, setCombination] = useState(false);
 
 
+    const [form, setForm] = useState(<AccountForm/>);
 
 
 
@@ -76,6 +80,7 @@ export default function AddAttribute({open,setOpen}) {
                               setDate(false);
                               setEmployee(false);
                               setCombination(false);
+                              setForm(<AccountForm/>)
                             }}
                             >
                               <BsCheckLg className={option ? 'self-end' : 'hidden'}/>
@@ -90,6 +95,7 @@ export default function AddAttribute({open,setOpen}) {
                                 setDate(true);
                                 setEmployee(false);
                                 setCombination(false);
+                                setForm(<AddDriverForm/>)
                               }}
                             >
                               <BsCheckLg className={date ? 'self-end' : 'hidden'}/>
@@ -104,6 +110,7 @@ export default function AddAttribute({open,setOpen}) {
                                     setDate(false);
                                     setEmployee(true);
                                     setCombination(false);
+                                    setForm(<AddValueForm/>)
                                 }}
                             >
                               <BsCheckLg className={employee ? 'self-end' : 'hidden'}/>
@@ -118,6 +125,7 @@ export default function AddAttribute({open,setOpen}) {
                                 setDate(false);
                                 setEmployee(false);
                                 setCombination(true);
+                                setForm(<AddOpenEndedQuestionForm/>)
                             }}
                             >
                               <BsCheckLg className={combination ? 'self-end' : 'hidden'}/>
@@ -127,7 +135,7 @@ export default function AddAttribute({open,setOpen}) {
                               </div>
                             </div>
                           </div>
-                          <AddDriverForm/>
+                          {form}
                       </div>
                         <div>
                         <div className='border border-gray-900 mb-4'/>
