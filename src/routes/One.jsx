@@ -1,8 +1,11 @@
 import React from 'react'
+import SegmentsTable from '../tables/SegmentsTable'
 
 const Daj = () => {
   return (
-    <div>One</div>
+    <div>
+      <SegmentsTable/>
+    </div>
   )
 }
 

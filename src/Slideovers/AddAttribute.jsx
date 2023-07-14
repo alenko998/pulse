@@ -10,6 +10,7 @@ import {FcMenu} from 'react-icons/fc'
 import {BsCheckLg,BsWindowSplit} from 'react-icons/bs'
 import {CiCalendarDate} from 'react-icons/ci'
 import {AiOutlineUser} from 'react-icons/ai'
+import AddOptionForm from '../forms/AddOptionForm'
 
 export default function AddAttribute({open,setOpen}) {
 
@@ -19,7 +20,7 @@ export default function AddAttribute({open,setOpen}) {
     const [combination, setCombination] = useState(false);
 
 
-    const [form, setForm] = useState(<AccountForm/>);
+    const [form, setForm] = useState(<AddOptionForm/>);
 
 
 
@@ -80,7 +81,7 @@ export default function AddAttribute({open,setOpen}) {
                               setDate(false);
                               setEmployee(false);
                               setCombination(false);
-                              setForm(<AccountForm/>)
+                              setForm(<AddOptionForm/>)
                             }}
                             >
                               <BsCheckLg className={option ? 'self-end' : 'hidden'}/>
