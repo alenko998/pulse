@@ -13,6 +13,7 @@ import {AiOutlineUser} from 'react-icons/ai'
 import AddOptionForm from '../forms/AddOptionForm'
 import AddDateForm from '../forms/AddDateForm'
 import AddEmployeeForm from '../components/AddEmployeeForm'
+import AddCombinationForm from '../forms/AddCombinationForm'
 
 export default function AddAttribute({open,setOpen}) {
 
@@ -128,7 +129,7 @@ export default function AddAttribute({open,setOpen}) {
                                 setDate(false);
                                 setEmployee(false);
                                 setCombination(true);
-                                setForm(<AddOpenEndedQuestionForm/>)
+                                setForm(<AddCombinationForm/>)
                             }}
                             >
                               <BsCheckLg className={combination ? 'self-end' : 'hidden'}/>
