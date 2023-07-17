@@ -14,7 +14,6 @@ import Signup from './routes/Signup'
 import SidebarLayout from './layouts/SidebarLayout'
 import Organization from './routes/Organization'
 import Terms from './routes/Terms'
-import Survey from './routes/Survey'
 import Submit from './routes/Submit'
 import Employees from './routes/Employees'
 import Thankyou from './routes/Thankyou'
@@ -26,6 +25,8 @@ import SurveyQuestions from './routes/SurveyQuestions'
 import Engagament from './routes/Engagament'
 import OpenEnded from './routes/OpenEnded'
 import Attributes from './routes/Attributes'
+import StartSurvey from './routes/StartSurvey'
+import Survey from './routes/Survey'
 
 const router = createBrowserRouter(
     createRoutesFromElements(
@@ -35,6 +36,7 @@ const router = createBrowserRouter(
         <Route path='/recover' element={<Recover/>}/>
         <Route path='/signup' element={<Signup/>}/>
         <Route path='/terms' element={<Terms/>}/>
+        <Route path='/startSurvey' element={<StartSurvey/>}/>
         <Route path='/survey' element={<Survey/>}/>
         <Route path='/submit' element={<Submit/>}/>
         <Route path='/thankyou' element={<Thankyou/>}/>
