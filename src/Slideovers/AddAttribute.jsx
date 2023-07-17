@@ -11,6 +11,8 @@ import {BsCheckLg,BsWindowSplit} from 'react-icons/bs'
 import {CiCalendarDate} from 'react-icons/ci'
 import {AiOutlineUser} from 'react-icons/ai'
 import AddOptionForm from '../forms/AddOptionForm'
+import AddDateForm from '../forms/AddDateForm'
+import AddEmployeeForm from '../components/AddEmployeeForm'
 
 export default function AddAttribute({open,setOpen}) {
 
@@ -96,7 +98,7 @@ export default function AddAttribute({open,setOpen}) {
                                 setDate(true);
                                 setEmployee(false);
                                 setCombination(false);
-                                setForm(<AddDriverForm/>)
+                                setForm(<AddDateForm/>)
                               }}
                             >
                               <BsCheckLg className={date ? 'self-end' : 'hidden'}/>
@@ -111,7 +113,7 @@ export default function AddAttribute({open,setOpen}) {
                                     setDate(false);
                                     setEmployee(true);
                                     setCombination(false);
-                                    setForm(<AddValueForm/>)
+                                    setForm(<AddEmployeeForm/>)
                                 }}
                             >
                               <BsCheckLg className={employee ? 'self-end' : 'hidden'}/>
