@@ -3,7 +3,7 @@ import SignupForm from '../forms/SignupForm'
 
 const Signup = () => {
   return (
-    <div className='w-full h-screen  pl-40 pt-32 pb-32 pr-4'>
+    <div className='w-full h-screen  pl-40 pt-32 pb-32  pr-4'>
       <div className='w-full h-full flex'> 
         <div className= 'lg:w-2/5 h-full'>
           <SignupForm/>

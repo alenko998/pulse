@@ -49,10 +49,11 @@ const SidebarItems = () => {
     <Fragment>
                  <li key={navigation[0].name}>
                         <a
+                          onClick={()=>{navigation[0].current===true}}
                           href={navigation[0].href}
                           className={classNames(
                             navigation[0].current
-                              ? 'bg-indigo-600 text-white'
+                              ? 'bg-indigo-600 text-black'
                               : 'text-indigo-200 hover:text-white hover:bg-indigo-600',
                             'group flex gap-x-3 rounded-md p-2 text-sm leading-6 font-semibold'
                           )}
@@ -64,7 +65,7 @@ const SidebarItems = () => {
                                    className="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer"
                             />
                             <div className='bg-indigo-600 h-12 w-full pl-4 flex items-center'>
-                              {navigation[0].name}
+                           {navigation[0].name}
                             </div>
                             {/* content */}
                             <div className='bg-indigo-600 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-0'>
@@ -77,6 +78,7 @@ const SidebarItems = () => {
              
                       <li key={navigation[1].name}>
                         <a
+                         onClick={()=>{navigation[0].current===false; navigation[1].current===true; }}
                           href={navigation[1].href}
                           className={classNames(
                             navigation[0].current
