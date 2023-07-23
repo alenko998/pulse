@@ -1,8 +1,10 @@
 import { Fragment, useRef, useState } from 'react'
 import { Dialog, Transition } from '@headlessui/react'
+import {FaDownload} from 'react-icons/fa'
+import Button from '../components/Button'
 
 
-export default function DeleteEmployeeModal({open,setOpen}) {
+export default function ImportModal({open,setOpen}) {
 
 
   const cancelButtonRef = useRef(null)
@@ -33,36 +35,34 @@ export default function DeleteEmployeeModal({open,setOpen}) {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden rounded-lg bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg sm:p-6">
-                <div className="sm:flex sm:items-start">
-                  <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+              <Dialog.Panel className="flex flex-col  relative transform overflow-hidden rounded-xl bg-white px-4 pb-4 pt-5 text-left shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-3xl sm:p-6">
+                <div className="sm:flex sm:items-start flex flex-col">
+                  <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left ">
                     <Dialog.Title as="h3" className="text-base font-semibold leading-6 text-gray-900">
-                        Delete selected employee?
+                        Import from Excel
                     </Dialog.Title>
-                    <div className="mt-2">
+                    <div className="mt-6 flex">
                       <p className="text-sm text-gray-500">
-                        Past employee data and survey results will be kept in the database as historical records. 
+                      Step 1: Here you can get a template fle that matches the structure of attributes of your organization.
+                      Just fll in the data in this template and upload it back to Pulse.
                       </p>
                     </div>
+                    <div className='ml-40 mt-4' onClick={()=>{setOpen(false)}}>
+                    <Button text={"Download"}/>
+                    </div>
+                   
                   </div>
+                 
                 </div>
-                <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
+                {/* <div className="mt-5 sm:mt-4 sm:flex sm:flex-row-reverse">
                   <button
                     type="button"
                     className="inline-flex w-full justify-center rounded-md bg-indigo-600 px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 sm:ml-3 sm:w-auto"
                     onClick={() => setOpen(false)}
                   >
-                    Delete
+                    Download
                   </button>
-                  <button
-                    type="button"
-                    className="mt-3 inline-flex w-full justify-center rounded-md bg-white px-3 py-2 text-sm font-semibold text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 hover:bg-gray-50 sm:mt-0 sm:w-auto"
-                    onClick={() => setOpen(false)}
-                    ref={cancelButtonRef}
-                  >
-                    Cancel
-                  </button>
-                </div>
+                </div> */}
               </Dialog.Panel>
             </Transition.Child>
           </div>
