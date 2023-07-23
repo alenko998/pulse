@@ -48,7 +48,7 @@ export default function ImportModal({open,setOpen}) {
                       </p>
                     </div>
                     <div className='ml-40 mt-4' onClick={()=>{setOpen(false)}}>
-                    <Button text={"Download"}/>
+                    <Button text={"Download template"}/>
                     </div>
                    
                   </div>
