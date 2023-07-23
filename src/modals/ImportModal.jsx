@@ -47,10 +47,23 @@ export default function ImportModal({open,setOpen}) {
                       Just fll in the data in this template and upload it back to Pulse.
                       </p>
                     </div>
-                    <div className='ml-40 mt-4' onClick={()=>{setOpen(false)}}>
+                    <div className='sm:ml-52 md:ml-64 mt-4' onClick={()=>{setOpen(false)}}>
                     <Button text={"Download template"}/>
                     </div>
-                   
+                    <div className="mt-6 flex">
+                      <p className="text-sm text-gray-500">
+                      Step 2: Upload a template with your employees' data. Before uploading, make sure the column header
+                      names are the same as your organization attributes. 
+                      </p>
+                    </div>
+                    <div className='border flex flex-col  items-center border-gray-500 w-3/4 mx-auto  mt-6 py-4'>
+                        <FaDownload size={80}/>
+                        <p className='font-bold'>Drag and drop to upload</p>
+                        <p className='text-sm text-gray-500"'>or <span className='text-blue-500 underline hover:cursor-pointer'>browse</span> to choose a fle</p>
+                    </div>
+                    <div className='sm:ml-60 md:ml-72 mt-4' onClick={()=>{setOpen(false)}}>
+                    <Button text={"Import data"}/>
+                    </div>
                   </div>
                  
                 </div>
