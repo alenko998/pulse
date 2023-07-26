@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from './Button'
 
-const EmployeesHeading = ({title,setOpenExport,setOpenImport}) => {
+const EmployeesHeading = ({title,setOpenExport,setOpenImport,setOpenAdd}) => {
   return (
     <div>
         <div className='flex justify-between items-center'>
@@ -13,7 +13,7 @@ const EmployeesHeading = ({title,setOpenExport,setOpenImport}) => {
                 <div className='ml-3' onClick={()=>{setOpenImport(true)}}>
                     <Button text="Import"/>
                 </div>
-                <div className='ml-6'>
+                <div className='ml-6' onClick={()=>{setOpenAdd(true)}}>
                     <Button text="Add employee"/>
                 </div>
             </div>
