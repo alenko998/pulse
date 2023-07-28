@@ -20,6 +20,7 @@ import Button from './Button'
 import Dropdown from './Dropdown'
 import EmployeeTable from '../tables/EmployeeTable'
 import DataTable from '../tables/DataTable'
+import FilterInput from './FilterInput'
 
 const sortOptions = [
   { name: 'Most Popular', href: '#', current: true },
@@ -174,8 +175,11 @@ export default function Filter({setOpen}) {
 
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
               {/* Filters */}
-              <form className="hidden lg:block mt-12">
+              <form className="hidden lg:block">
                 <h3 className="sr-only">Categories</h3>
+                <div className='mb- mt-[-28px]'>
+                <FilterInput/>
+                </div>
                 {filters.map((section) => (
                   <Disclosure as="div" key={section.id} className="border-b border-gray-200 py-6">
                     {({ open }) => (
