@@ -19,6 +19,7 @@ import { ChevronDownIcon, FunnelIcon, MinusIcon, PlusIcon, Squares2X2Icon } from
 import Button from './Button'
 import Dropdown from './Dropdown'
 import EmployeeTable from '../tables/EmployeeTable'
+import DataTable from '../tables/DataTable'
 
 const sortOptions = [
   { name: 'Most Popular', href: '#', current: true },
@@ -173,7 +174,7 @@ export default function Filter({setOpen}) {
 
             <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
               {/* Filters */}
-              <form className="hidden lg:block mt-24">
+              <form className="hidden lg:block mt-12">
                 <h3 className="sr-only">Categories</h3>
                 {filters.map((section) => (
                   <Disclosure as="div" key={section.id} className="border-b border-gray-200 py-6">
@@ -221,7 +222,7 @@ export default function Filter({setOpen}) {
 
               {/* Product grid */}
               <div className="lg:col-span-3">
-                <div className='flex flex-col'>
+                <div className='flex flex-col mt-[-20px]'>
                   <div className='flex justify-between  sm:self-end'>
                     <div onClick={()=>{setOpen(true); console.log("daj");}}>
                       <Button text="Delete"/>
@@ -231,8 +232,8 @@ export default function Filter({setOpen}) {
                     </div>
                         <Dropdown/>
                   </div>
-                  <div className='mt-[-9px]'>
-                    <EmployeeTable/>
+                  <div className='mt-3'>
+                    <DataTable/>
                   </div>
                 </div>
               </div>
