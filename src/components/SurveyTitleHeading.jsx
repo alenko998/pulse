@@ -3,7 +3,7 @@ import {AiOutlineCheck} from 'react-icons/ai'
 
 const SurveyTitleHeading = () => {
   return (
-    <div className='flex flex-col px-10 py-5'>
+    <div className='flex flex-col px-40 py-5'>
         <div className='flex '>
             <div className='w-1/3 border border-gray-500 flex'>
                 <div class="flex justify-center items-center w-12 h-12 rounded-full border border-black bg-black mx-1 my-4">

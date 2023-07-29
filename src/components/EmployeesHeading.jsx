@@ -13,7 +13,7 @@ const EmployeesHeading = ({title,setOpenExport,setOpenImport,setOpenAdd}) => {
                 <div className='ml-3' onClick={()=>{setOpenImport(true)}}>
                     <Button text="Import"/>
                 </div>
-                <div className='ml-6' onClick={()=>{setOpenAdd(true)}}>
+                <div className='ml-3' onClick={()=>{setOpenAdd(true)}}>
                     <Button text="Add employee"/>
                 </div>
             </div>

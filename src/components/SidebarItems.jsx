@@ -101,7 +101,7 @@ const SidebarItems = () => {
                               <SlArrowRight className={`text-white`} />
                             </div>
                             {/* content */}
-                            <div className='bg-indigo-600 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-44'>
+                            <div className='bg-indigo-600 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-44 peer-checked:bg-indigo-700'>
                               <div className='p-4 ml-1'>
                                {organizationPages.map((page)=>(
                                 <a href={page.href} className=''><p className='mb-4'>{page.name}</p></a>
@@ -137,7 +137,7 @@ const SidebarItems = () => {
                               <SlArrowRight className={`text-white`} />
                             </div>
                             {/* content */}
-                            <div className='bg-indigo-600 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40'>
+                            <div className='bg-indigo-600 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40 peer-checked:bg-indigo-700'>
                               <div className='ml-1 p-4'>
                                 {dataCollectionPages.map((page)=>(
                                   <a href={page.href} className=''><p className='mb-4'>{page.name}</p></a>
@@ -173,10 +173,10 @@ const SidebarItems = () => {
                               <SlArrowRight className={`text-white`} />
                             </div>
                             {/* content */}
-                            <div className='bg-indigo-600 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40'>
+                            <div className='bg-indigo-600 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40 peer-checked:bg-indigo-700'>
                               <div className='p-4'>
                               {configurationPages.map((page)=>(
-                                  <a href={page.href} className=''><p className='mb-4'>{page.name}</p></a>
+                                  <a href={page.href} className=''><p className='mb-4 text-blue-400'>{page.name}</p></a>
                                 ))}
                               </div>
                             </div>

@@ -8,7 +8,7 @@ const Survey = () => {
   return (
     <div>
       <SurveyTitleHeading/>
-        <div className='w-1/2 flex flex-col  mx-auto '>
+        <div className='w-1/2 flex flex-col  ml-[100px] sm:ml-[550px] '>
           <QuestionComponent/>
           <QuestionComponent/>
           {/* buttons */}

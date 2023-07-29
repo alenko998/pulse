@@ -5,7 +5,6 @@ import {
     Route, 
     RouterProvider, 
 } from 'react-router-dom'
-import Daj from './routes/One'
 import Account from './routes/Account'
 import Branding from './routes/Branding'
 import Signin from './routes/Signin'
@@ -41,7 +40,6 @@ const router = createBrowserRouter(
         <Route path='/submit' element={<Submit/>}/>
         <Route path='/thankyou' element={<Thankyou/>}/>
         <Route path='/dashboard' element={<SidebarLayout/>}>
-            <Route path='one' element={<Daj/>}/>
             <Route path='organization' element={<Organization/>}/>
             <Route path='account' element={<Account/>}/>
             <Route path='branding' element={<Branding/>}/>
